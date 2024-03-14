@@ -8,8 +8,13 @@ const config: Config = {
   ],
   theme: {
     extend: {
+      fontFamily: {
+        lora: ['Lora'],
+        faustina: ['Faustina']
+      },
       colors: {
         mvcP: "#6D2770",
+        mvcP2: "#501E54",
         mvcO: "#F1942F"
       },
       backgroundImage: {

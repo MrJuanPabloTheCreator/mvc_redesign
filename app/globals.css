@@ -35,4 +35,39 @@ body {
   .text-balance {
     text-wrap: balance;
   }
+
+  .navbar-border {
+    width: 0%;
+    transition: width 0.5s;
+  } 
+  .navbar:hover {
+    cursor: pointer;
+  }
+
+  .navbar:hover .navbar-border {
+    background-color: #F1942F;
+    width: 100%;
+  }
+}
+
+.dropdown {
+  position: relative;
+  left: 0;
+  top: 0;
+}
+
+.dropdown-menu {
+  position: absolute;
+  opacity: 0;
+  width: 0;
+  transform: translateY(0);
+  transition: opacity 150ms ease-in-out;
+}
+
+.dropdown > .navbar:focus + .dropdown-menu {
+  opacity: 1;
+  position: fixed;
+  left: 100px;
+  width: 1400px;
+  transform: translateY(10);
 }
