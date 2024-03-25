@@ -7,6 +7,14 @@ const config: Config = {
     "./app/**/*.{js,ts,jsx,tsx,mdx}",
   ],
   theme: {
+    screens: {
+      'sm': '640px',
+      'md': '768px',
+      'lg': '1024px',
+      'xl': '1280px', 
+      '2xl': '1536px',
+      '3xl': '1920px'
+    },
     extend: {
       fontFamily: {
         lora: ['Lora'],
@@ -15,7 +23,8 @@ const config: Config = {
       colors: {
         mvcP: "#6D2770",
         mvcP2: "#501E54",
-        mvcO: "#F1942F"
+        mvcO: "#F1942F",
+        bgGray: "#F4F4F4"
       },
       backgroundImage: {
         "gradient-radial": "radial-gradient(var(--tw-gradient-stops))",
