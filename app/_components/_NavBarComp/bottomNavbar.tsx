@@ -17,7 +17,7 @@ export default function BottomNavbar(){
 
   const [activeNav, setActiveNav] = useState<number>(-1)
 
-  const continueActive = (index: number) => {
+  function continueActive(index: number){
     setActiveNav(index);
   }
 
@@ -33,7 +33,7 @@ export default function BottomNavbar(){
               className="flex relative items-center navbar pt-4 pb-2"
             >
               <a>{item}</a>
-              <span className="absolute bottom-0 p-[2px] rounded-lg navbar-border"/> 
+              <span className="absolute bottom-0 p-[2px] rounded-lg navbar-border"/>
             </button>
           ))}
           {activeNav !== -1 && activeNav != 3 && activeNav != 7 &&(        
