@@ -24,7 +24,7 @@ export default function Images() {
     ];
 
     return (
-        <div className="flex justify-center items-center w-full">
+        <div className="flex justify-center items-center py-20 bg-black w-full">
             <div className="flex w-full h-[550px]">
               {images.map((item, index) => (
                 <div key={index} className="relative overflow-hidden hover:cursor-pointer homeImagesParent">

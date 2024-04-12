@@ -9,7 +9,7 @@ export const NavbarCard: React.FC<NavbarCardProps> = ({ active_nav, continue_act
     const isActive = active_nav !== -1;
 
     return (
-        <div className={`flex absolute w-[1300px] py-2 z-50 top-[52px] ${isActive ? 'navBarCard-animate' : ''}`} onMouseEnter={() => (continue_active(active_nav))} onMouseLeave={() => (continue_active(-1))}>
+        <div className={`flex absolute w-[1300px] pt-2 z-50 top-[52px] ${isActive ? 'navBarCard-animate' : ''}`} onMouseEnter={() => (continue_active(active_nav))} onMouseLeave={() => (continue_active(-1))}>
             <div className="flex flex-col w-full bg-black/80 p-10 text-white rounded-lg">
                 <h2 className="flex items-start">
                     <button className="text-2xl text-mvcO font-bold hover:cursor-pointer hover:underline">

@@ -10,9 +10,9 @@ export default function Home() {
       <img src="/MVC_1.jpg" alt="Hero" className="fixed object-cover w-full mt-[-220px] z-[-1]"/>
       <Hero/>
       <div className="bg-bgGray">
-        {/* <VirtualTour/> */}
         <Images/>
         <News/>
+        <VirtualTour/>
       </div>
     </main>
   );

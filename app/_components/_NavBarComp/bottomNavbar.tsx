@@ -22,7 +22,7 @@ export default function BottomNavbar(){
   }
 
   return (
-    <div className="flex flex-col w-full absolute bottom-[-50px] ">
+    <div className="flex flex-col w-full absolute bottom-[-50px]">
       <div className="flex w-full">
         <div className="flex justify-center w-full space-x-7 font-semibold text-xl text-white z-50 relative">
           {navItems.map((item, index) => (
