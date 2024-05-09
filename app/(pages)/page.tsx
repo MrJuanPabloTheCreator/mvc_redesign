@@ -12,7 +12,7 @@ export default function Home() {
       <div className="bg-bgGray">
         <Images/>
         <News/>
-        <VirtualTour/>
+        {/* <VirtualTour/> */}
       </div>
     </main>
   );

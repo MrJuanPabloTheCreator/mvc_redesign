@@ -27,13 +27,13 @@ export default function Images() {
         <div className="flex justify-center items-center py-20 bg-black w-full">
             <div className="flex w-full h-[550px]">
               {images.map((item, index) => (
-                <div key={index} className="relative overflow-hidden hover:cursor-pointer homeImagesParent">
+                <div key={index} className="relative overflow-hidden homeImagesParent">
                   <img src={item.img} className="object-cover homeImages h-full"/>
                   <div className="flex flex-col space-y-3 items-center justify-center absolute bottom-[50px] w-full z-50">
                       <h4 className="text-white text-6xl">{item.title}</h4>
                       <p className=" text-white text-center">{item.p}</p>
-                      <button className="py-2 px-5 bg-mvcP2  text-white rounded-lg text-lg">
-                      {item.title}
+                      <button className="py-2 px-5 bg-mvcP2  text-white rounded-lg text-lg hover:bg-mvcP hover:scale-110 hover:cursor-pointer transition-transform ease-in-out duration-500">
+                        {item.title}
                       </button>
                   </div>
                   <div className="absolute bottom-0 pt-[300px] text-white w-full bg-gradient-to-t from-black to-tansparent"/>
